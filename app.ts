@@ -1,23 +1,13 @@
-//Objeto Pessoa 
-interface Pessoa {
-    nome:String,
-    idade:number,
-    profissao?:String // "?" Atributo é OPCIONAL !!!!!
+const typeUser = {
+    admin: "Seja bem vindo admin",
+    student: "Você é estudande",
+    viewer: "Você pode visualizar"
 }
 
-const pessoa:Pessoa = {
-    nome: "Gabriel",
-    idade: 24
+function validarUser(user: String){
+    console.log(typeUser[user as keyof typeof typeUser])
 }
 
-const outraPessoa: Pessoa = {
-    nome: "Isa",
-    idade: 23,
-    profissao: "MEDVET"
-}
+const usuario = 'admin'
 
-// Array de objetos Pessoa
-const pessoas: Pessoa[] = [
-    pessoa,
-    outraPessoa
-];
+validarUser(usuario)
