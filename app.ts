@@ -1,13 +1,6 @@
-const typeUser = {
-    admin: "Seja bem vindo admin",
-    student: "Você é estudande",
-    viewer: "Você pode visualizar"
-}
+const arrayNum: Array<number> = [1,2,3];
+const arrayNum2: number[] = [1, 2,3]
 
-function validarUser(user: String){
-    console.log(typeUser[user as keyof typeof typeUser])
-}
 
-const usuario = 'admin'
+const arrayString: string[] = ["a" , "b", "c"]
 
-validarUser(usuario)
