@@ -1,18 +1,50 @@
+//Banco
+//name | accountNumber
+//DEPOSITAR | SACAR
 
-class User {
-    name: String = "Gabriel"
-    idade: number = 24
+//Classe de Conta Bancaria
+abstract class Account {
+    name: String
+    accountNumber: number
+    balance: number = 0
 
-    constructor(name: string, idade: number){
-        this.name = name,
-        this.idade = idade
+    constructor(name: String, accountNumber: number){
+        this.name = name
+        this.accountNumber = accountNumber
     }
 
-    show(){
-        console.log(this.name)
+    deposit = () =>{
+        console.log("Voçê Depositou!")
+    }
+    
+    withraw = () =>{
+        console.log("Voçê Sacou!")
+    }
+
+    getBalance = () => {
+        console.log(this.balance)
     }
 }
 
+//Classe de Administrador
+class Admin extends Account{
 
-const user = new User("PEdro", 33)
-user.show()
+    constructor(name:string, accountNumber: number){
+        super(name, accountNumber)
+        this.balance = 20
+    }
+
+    
+}
+
+class PeopleAccount extends Account{
+    doc_id:number
+
+    constructor(doc_id:number, name:String, accountNumber:number){
+        super(name, accountNumber)
+        this.doc_id = doc_id
+    }
+}
+
+const peopleAccount: PeopleAccount = new PeopleAccount(1, "Gabriel", 20)
+console.log(peopleAccount)
