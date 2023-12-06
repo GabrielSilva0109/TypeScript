@@ -1,9 +1,18 @@
-const arrayNum: Array<number> = [1,2,3,5,6,7]
 
-const arrayString: string[] = ["a" , "b", "c"]
+class User {
+    name: String = "Gabriel"
+    idade: number = 24
 
-console.log("Array origianl " + arrayNum)
+    constructor(name: string, idade: number){
+        this.name = name,
+        this.idade = idade
+    }
 
-arrayNum.push(7)
+    show(){
+        console.log(this.name)
+    }
+}
 
-console.log("Array novo " + arrayNum)
+
+const user = new User("PEdro", 33)
+user.show()
