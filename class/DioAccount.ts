@@ -1,7 +1,7 @@
 //Classe de Conta Bancaria
 export abstract class DioAccount {
     private name: String
-    accountNumber: number
+    private readonly accountNumber: number
     balance: number = 0
     status: boolean = true
 
@@ -17,6 +17,10 @@ export abstract class DioAccount {
     setName = (name: String): void  => {
         this.name = name
         console.log("Nome Alterado !!")
+    }
+
+    getAccountNumber = (): number => {
+        return this.accountNumber
     }
 
     deposit = (): void =>{
