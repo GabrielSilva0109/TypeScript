@@ -38,14 +38,17 @@ export abstract class DioAccount {
             return this.status
         }
 
-        throw new Error()
+        throw new Error("Conta Invalida")
     }
 }
 
 //Classe de Administrador
 export class Admin extends DioAccount{
+
     constructor(name:string, accountNumber: number){
         super(name, accountNumber)
         this.balance = 10
     }
+
+    
 }
