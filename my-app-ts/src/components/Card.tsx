@@ -1,15 +1,17 @@
 interface ICard {
-    id: number
+    id: number,
+    paragraph: string,
+    details: string
 }
 
 
 
-export const Card = ( {id}: ICard) => {
+export const Card = ( {id, paragraph, details}: ICard) => {
     return (
       <div>
         <h1>Card {id}</h1>
-        <p>Paragrafo</p>
-        <p>Details about card</p>
+        <p>{paragraph}</p>
+        <p>{details}</p>
       </div>
     );
   }
