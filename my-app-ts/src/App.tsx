@@ -1,23 +1,22 @@
-import { Card } from './components/Card';
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
 import { Layout } from './components/Layout';
+import styled from 'styled-components';
 
 function App() {
   return (
     <Layout>
-        Hello Word
-        <Card 
-          id={1}
-          paragraph='TypeScript'
-          details='TS para Front e Back'/>
-        <Card id={2}
-          paragraph='HTML'
-          details='HTML para Front'/>
-        <Card id={3}
-          paragraph='SQL'
-          details='SQL Banco'/>
-      </Layout>
+      <h1>Faça o Login</h1>
+      <label htmlFor='emailInput'>
+        Email
+      </label>
+      <input id='emailInput' type='emailW'/>
+      <label htmlFor='passwordInput'>
+        Senha
+      </label>
+      <input id='passwordInput'type='password'/>
+      <button>
+        Entrar
+      </button>
+    </Layout>
   );
 }
 
