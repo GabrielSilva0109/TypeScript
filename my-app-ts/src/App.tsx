@@ -4,9 +4,9 @@ function App() {
   return (
     <div>
       Hello Word
-      <Card/>
-      <Card/>
-      <Card/>
+      <Card id={1}/>
+      <Card id={2}/>
+      <Card id={3}/>
 
     </div>
   );
