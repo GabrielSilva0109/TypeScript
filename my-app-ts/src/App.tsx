@@ -2,6 +2,7 @@
 //import styled from 'styled-components';
 import { 
   Box,
+  Button,
   Center,
   ChakraProvider,
   Input  
@@ -17,8 +18,11 @@ function App() {
           <Center>
             <h1>Faça o Login</h1>
           </Center>
-          <Input placeholder='eEmail'/>
+          <Input placeholder='Email' marginBottom={'5px'}/>
           <Input placeholder='Password'/>
+          <Center>
+            <Button colorScheme='teal' size='lg' marginTop='5px'>Logar</Button>
+          </Center>
         </Box>
         
       </Box>
