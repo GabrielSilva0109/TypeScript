@@ -1,6 +1,6 @@
 import { Layout } from './components/Layout';
 import styled from 'styled-components';
-
+import { ChakraProvider } from '@chakra-ui/react'
 const Box = styled.div`
   background-color: orange;
   border-radius: 25px;
