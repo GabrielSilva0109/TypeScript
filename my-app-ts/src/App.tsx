@@ -14,7 +14,7 @@ function App() {
   return (
     <ChakraProvider>
       <Layout>
-        <Box >
+        <Box>
           <Card />
         </Box>
       </Layout>
