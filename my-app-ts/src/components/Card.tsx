@@ -35,14 +35,12 @@ export const Card = () => {
     console.log(userData)
 
     return (
-      <Box minHeight="100vh" background="#351547" padding="25px">
+      <Box minHeight="100vh" background="#359" padding="25px">
         <Box background="#fff" borderRadius="25px" padding="15px">
           <Center>
             <h1>Faça o Login</h1>
           </Center>
-          <Center>
-            
-          </Center>
+          <Center></Center>
           <Input placeholder='Email' marginBottom={'5px'} value={email} onChange={(event) => setEmail(event.target.value)}/>
           <Input placeholder='Password'/>
           <Center>
