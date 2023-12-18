@@ -10,15 +10,14 @@ import { useState } from 'react'
 
 function App() {
   const [ value, setValue] = useState(0)
+  
   return (
-    
     <ChakraProvider>
       <Layout>
         <Box >
           <Card />
         </Box>
       </Layout>
-      
     </ChakraProvider>
   );
 }
