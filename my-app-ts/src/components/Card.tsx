@@ -42,7 +42,7 @@ export const Card = () => {
           </Center>
           <Center></Center>
           <Input placeholder='Email' marginBottom={'5px'} value={email} onChange={(event) => setEmail(event.target.value)}/>
-          <Input placeholder='Password'/>
+          <Input placeholder='Password' type='password'/>
           <Center>
             <Button colorScheme='teal' size='lg' marginTop='5px' onClick={() => login(email)}>Logar</Button>
           </Center>
