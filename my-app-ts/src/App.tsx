@@ -8,8 +8,6 @@ import {
   Input  
 } from '@chakra-ui/react'
 
-
-
 function App() {
   return (
     <ChakraProvider>
@@ -24,7 +22,6 @@ function App() {
             <Button colorScheme='teal' size='lg' marginTop='5px'>Logar</Button>
           </Center>
         </Box>
-        
       </Box>
     </ChakraProvider>
   );
