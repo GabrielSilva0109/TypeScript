@@ -1,24 +1,28 @@
-//import { Layout } from './components/Layout';
-//import styled from 'styled-components';
-import { 
-  Box,
-  ChakraProvider,  
-} from '@chakra-ui/react'
+import React from 'react';
+import { useState } from 'react'; // Remova se não estiver usando
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Box, ChakraProvider } from '@chakra-ui/react';
 import { Layout } from './components/Layout';
 import { Card } from './components/Card';
-import { useState } from 'react'
 
 function App() {
-  const [ value, setValue] = useState(0)
-  
   return (
-    <ChakraProvider>
-      <Layout>
-        <Box>
-          <Card />
-        </Box>
-      </Layout>
-    </ChakraProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={
+          <ChakraProvider>
+            <Layout>
+              <Box>
+                <Card />
+              </Box>
+            </Layout>
+          </ChakraProvider>
+        } />
+        <Route path='/conta' element={
+          <h1>Conta</h1>
+        }/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
