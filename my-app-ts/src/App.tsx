@@ -10,13 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={
-          <ChakraProvider>
-            <Layout>
-              <Box>
-                <Card />
-              </Box>
-            </Layout>
-          </ChakraProvider>
+          
         } />
         <Route path='/conta' element={
           <h1>Conta</h1>
