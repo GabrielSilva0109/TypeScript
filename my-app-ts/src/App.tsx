@@ -4,14 +4,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Box, ChakraProvider } from '@chakra-ui/react';
 import { Layout } from './components/Layout';
 import { Card } from './components/Card';
+import Home from './pages/Home';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={
-          
-        } />
+        <Route path='/' element={<Home />} />
         <Route path='/conta' element={
           <h1>Conta</h1>
         }/>
