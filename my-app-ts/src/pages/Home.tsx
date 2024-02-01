@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { AppContext } from "../components/AppContext";
 import { Card } from "../components/Card";
 import DButton from "../components/DButton";
-import { login } from "../services/login";
-import { changeLocalStorage } from "../services/storage";
+import { login } from "../service/login"
+import { changeLocalStorage } from "../service/storage"
 
 const Home = () => {
     const [ email, setEmail ] = useState<string>('')

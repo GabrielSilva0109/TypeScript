@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react"
-import { getAllLocalStorage } from "../services/storage"
+import { getAllLocalStorage } from "../service/storage"
 
 interface IAppContext {
     user: string,
