@@ -1,5 +1,4 @@
 import { Button, Center, Box, Text } from '@chakra-ui/react'
-import './Header.css'
 
 export const Header = () => {
     return(
