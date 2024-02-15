@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { Route, Routes } from "react-router-dom"
+import { Routes } from  'react-router-dom'
 import { AppContext } from "./components/AppContext"
 import Conta from "./pages/Conta"
 import ContaInfo from "./pages/ContaInfo"
